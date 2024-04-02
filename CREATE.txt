@@ -1,0 +1,17 @@
+use tarefas;
+
+
+INSERT INTO tarefas
+(nome, descricao, prioridade)
+VALUES 
+('estudar PHP', 'Continuar meus estudos sobre PHP e MySql', 1)
+
+use tarefas;
+create table tarefas (
+id INTEGER AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(20) NOT NULL,
+descricao TEXT,
+prazo DATE,
+prioridade INTEGER(1),
+concluida BOOLEAN
+);

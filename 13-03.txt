@@ -1,0 +1,54 @@
+tinyurl.com/s6k3xfkp
+===========================================================
+Acessar o link acima
+===========================================================
+Para dividir a tela podemos utilizar os atalhos Windows + setas direita ou esquerda
+Para ajustar o Zoom do navegador podemos utilizar as teclas Ctrl + ou - =======================================
+Criar uma base de dados, nome comercial.
+create database comercial;
+agora deletar a base e criar novamente.
+drop database comercial;
+show databases;
+create database comercial;
+use comercial;
+=======================================
+CREATE TABLE Ambulatorios ( nroa integer, andar numeric(3) NOT NULL, capacidade smallint, PRIMARY KEY(nroa) );
+desc Ambulatorios;
+drop table Ambulatorios;
+show tables;
+criar novamente a tabela ambulatórios
+use comercial;
+CREATE TABLE medicos(
+codm integer,
+nome varchar(40) NOT NULL,
+idade smallint NOT NULL, 
+especialidade char(20), 
+CPF numeric(11) UNIQUE, 
+cidade varchar(30), 
+nroa integer,
+PRIMARY KEY(codm)''''''');
+--ALTER TABLE ambulatorios drop column nome;
+
+
+use comercial;
+insert into medicos
+(codm, nome, idade, especialidade, CPF,cidade)
+VALUES (5,"Carlos",29,"ortopedia",12000110000, "Joinville");
+use comercial;
+UPDATE medicos SET cidade = "Florianópolis";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
